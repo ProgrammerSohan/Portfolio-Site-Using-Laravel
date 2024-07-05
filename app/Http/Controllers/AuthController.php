@@ -39,7 +39,7 @@ class AuthController extends Controller
 
         if(Auth::attempt($credentials)){
 
-            return redirect('/items')->with('success','Login Ok');
+            return redirect('/dash')->with('success','Login Ok');
             
         }
         return back()->with('error','Email Or Password Incorrect!');
