@@ -34,6 +34,8 @@ Route::get('/register',[AuthController::class,'register'])->name('register');
 Route::post('/register',[AuthController::class,'registerPost'])->name('register.post');
 Route::get('/admin/login', [AuthController::class, 'login'])->name('login'); 
 Route::post('/admin/login', [AuthController::class, 'loginPost'])->name('login.post'); 
+
+//Home Route
 Route::get('/',[HomeController::class,'index']);
 
 });
