@@ -40,3 +40,46 @@ Route::get('/',[HomeController::class,'index']);
 
 });
 
+//Laravel Routes
+//a
+Route::get('/test1', function(){
+    return 'Hello, Sohan!';
+});
+//b
+Route::get('/test2',function(){
+    return "Test2 is running";
+});
+
+//sample website
+Route::get('/welcome', function(){
+    return view('welcome');
+});
+
+Route::get('about', function(){
+    return view('about');
+});
+
+Route::get('products', function(){
+     return view('products');
+});
+
+Route::get('services', function(){
+    return view('services');
+});
+
+//Route Parameters
+/********** */
+//Required Parameters
+Route::get('/user/{id}', function($id){
+    return 'User Id: ' . $id;
+});
+
+//Optional Parameters
+Route::get('/testuser/{name?}', function($name = 'Guest'){
+    return 'User Name: ' . $name;
+});
+
+//Parameters with constraints
+Route::get('/usercons/{id}', function($id){
+    return 'User ID: ' . $id;
+})->where('id','[0-9]+'); //http://localhost:8000/usercons/112
