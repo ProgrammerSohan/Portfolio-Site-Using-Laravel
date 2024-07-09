@@ -83,3 +83,19 @@ Route::get('/testuser/{name?}', function($name = 'Guest'){
 Route::get('/usercons/{id}', function($id){
     return 'User ID: ' . $id;
 })->where('id','[0-9]+'); //http://localhost:8000/usercons/112
+
+
+//data pass from route to view
+//using compact
+Route::get('/compact', function(){
+    $name = 'Sohan';
+    $age = '299';
+    return view('compact', compact('name','age'));
+});
+
+//using with
+Route::get('/with',function(){
+    $name = 'Sohan';
+    $age = '299';
+    return view('with')->with('name',$name)->with('age',$age);
+});
