@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title','Sohan Company')
 @section('content')
 <div class="bg-light text-center py-5">
         <div class="container">

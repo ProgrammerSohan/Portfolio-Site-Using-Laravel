@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title','Contact Page')
 @section('content')
 
 <div class="bg-light text-center py-5">
