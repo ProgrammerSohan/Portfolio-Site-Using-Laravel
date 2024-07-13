@@ -1,9 +1,10 @@
-@extends('layouts.master');
+@extends('layouts.master')
 
 @section('content')
+
 <div class="bg-light text-center py-5">
         <div class="container">
-            <h1 class="display-4">Welcome to Services Page</h1>
+            <h1 class="display-4">Welcome to Contact Page</h1>
             <p class="lead">We provide the best services to grow your business. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt id aliquam, veniam commodi voluptate hic natus neque ipsam rerum eos expedita quae eum rem nemo placeat? Rem accusamus vel veniam.
             Quasi dolore eos ipsum pariatur quibusdam, quod repellat nisi reiciendis qui dolorem, enim praesentium veniam maiores architecto eligendi, laudantium tempora explicabo. At atque enim odio harum dignissimos perferendis deserunt. Nostrum.
             Quaerat nostrum rerum sunt voluptatibus cumque quod eaque dignissimos officiis et fugit consequatur odit, nulla laudantium, quam molestiae doloremque corrupti officia pariatur, iusto maiores culpa exercitationem. Veritatis ducimus quibusdam in.
@@ -17,5 +18,4 @@
            
         </div>
     </div>
-
     @endsection

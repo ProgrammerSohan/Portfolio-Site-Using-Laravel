@@ -10,5 +10,6 @@
     <p>Name: {{$name}}</p>
     <p>Age: {{ $age}}</p>
     
+    <!-- class4=hw=array, -->
 </body>
 </html>

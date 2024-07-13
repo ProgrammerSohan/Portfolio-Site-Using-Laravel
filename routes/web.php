@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ItemController;
+use App\Http\Controllers\LayoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -99,3 +100,8 @@ Route::get('/with',function(){
     $age = '299';
     return view('with')->with('name',$name)->with('age',$age);
 });
+
+Route::get('/layout',[LayoutController::class, 'layout'])->name('home');
+Route::get('/about',[LayoutController::class,'about'])->name('about');
+Route::get('/services',[LayoutController::class,'services'])->name('services');
+Route::get('/contact',[LayoutController::class,'contact'])->name('contact');
