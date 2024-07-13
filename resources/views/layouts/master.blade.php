@@ -1,10 +1,10 @@
-@include('layouts.header');
+@include('layouts.header')
 
-@include('layouts.navbar');
+@include('layouts.navbar')
 
    
     @yield('content')
 
   
 
-    @include('layouts.footer');
+    @include('layouts.footer')

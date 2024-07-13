@@ -23,4 +23,9 @@ class LayoutController extends Controller
         return view('contact');
 
     }
+
+    public function blog(){
+        return view('blog');
+    }
+
 }

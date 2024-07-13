@@ -105,3 +105,4 @@ Route::get('/layout',[LayoutController::class, 'layout'])->name('home');
 Route::get('/about',[LayoutController::class,'about'])->name('about');
 Route::get('/services',[LayoutController::class,'services'])->name('services');
 Route::get('/contact',[LayoutController::class,'contact'])->name('contact');
+Route::get('/blog',[LayoutController::class,'blog'])->name('blog');

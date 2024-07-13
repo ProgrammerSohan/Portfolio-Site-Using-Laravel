@@ -1,4 +1,4 @@
-@extends('layouts.master');
+@extends('layouts.master')
 @section('title','Services Page')
 @section('content')
 <div class="bg-light text-center py-5">

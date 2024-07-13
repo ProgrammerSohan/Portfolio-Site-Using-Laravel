@@ -1,8 +1,6 @@
 @extends('layouts.master')
-@section('title','About Page')
-
+@section('title','Blog Page')
 @section('content')
-
 <div class="bg-light text-center py-5">
         <div class="container">
             <h1 class="display-4">Welcome to About Page</h1>
@@ -19,5 +17,4 @@
            
         </div>
     </div>
-
-    @endsection
+@endsection
